@@ -17,3 +17,8 @@ sudo make install
 
 echo AKIAJ6LDAAMLU4QLZMGQ:tCFS6qCX2sY8xI59IeNVolzlsdFHU2/KbuE32RCu > ~/.passwd-s3fs
 chmod 600 ~/.passwd-s3fs
+
+# mount S3 bucket
+
+sudo mkdir -p /dev/ec2/s3bucket
+sudo /opt/s3fs/bin/s3fs your_s3_bucket_name /dev/ec2/s3bucket/ -o allow_other
