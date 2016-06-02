@@ -4,6 +4,7 @@
 echo "Install Make"
 
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y install make
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install automake
 
 echo "Installing S3FS .."
 sudo wget http://s3fs.googlecode.com/files/s3fs-1.74.tar.gz
